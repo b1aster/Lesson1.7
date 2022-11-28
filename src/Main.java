@@ -124,5 +124,21 @@ public class Main {
                 nextFriday += 7;
             }
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 3.1
+        int currentYear = 2022;
+        int startYear = currentYear - 200;
+        int endYear = currentYear + 100;
+
+        year = startYear;
+
+        for (; year <= endYear; year++){
+
+            if (year % 79 == 0)
+                System.out.println(year);
+        }
     }
 }
