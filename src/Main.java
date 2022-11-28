@@ -92,5 +92,22 @@ public class Main {
             if (months % 6 == 0)
                 System.out.println("За " + months + " месяц Василий накопил " + deposit + " рублей");
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 2.3
+        int years = 9;
+        deposit = 15_000;
+        months = 0;
+
+        while (months < years * 12){
+            months++;
+
+            deposit += (deposit * (percentage / 100));
+
+            if (months % 6 == 0)
+                System.out.println("За " + months + "-й месяц Василий накопил " + deposit + " рублей");
+        }
     }
 }
