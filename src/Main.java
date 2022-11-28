@@ -76,5 +76,21 @@ public class Main {
         }
 
         System.out.println("За " + months + " месяцев Василий накопил " + deposit + " рублей");
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 2.2
+        deposit = 15_000;
+        months = 0;
+        while (deposit < 12_000_000){
+
+            deposit += (deposit * (percentage / 100));
+
+            months++;
+
+            if (months % 6 == 0)
+                System.out.println("За " + months + " месяц Василий накопил " + deposit + " рублей");
+        }
     }
 }
