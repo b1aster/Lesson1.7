@@ -38,5 +38,26 @@ public class Main {
                 System.out.print(" ");
         }
 
+
+        // Разделитель
+        System.out.println("\n");
+
+        // Задание 1.3
+        int population = 12_000_000;
+        int birthRate = 17;
+        int mortality = 8;
+        int demography = (population / 1000) * (birthRate - mortality);
+        int calculateYears = 10;
+
+        int year = 1;
+        while (calculateYears >= 1){
+
+            population += demography;
+
+            System.out.println("Год " + year + ", численность населения составляет " + population);
+
+            year++;
+            calculateYears--;
+        }
     }
 }
