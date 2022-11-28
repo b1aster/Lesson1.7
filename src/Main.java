@@ -109,5 +109,20 @@ public class Main {
             if (months % 6 == 0)
                 System.out.println("За " + months + "-й месяц Василий накопил " + deposit + " рублей");
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 2.4
+        int daysInCurrentMonth = 31;
+        int nextFriday = 4;
+
+        for (int day = 1; day <= daysInCurrentMonth; day++){
+
+            if (day == nextFriday) {
+                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
+                nextFriday += 7;
+            }
+        }
     }
 }
