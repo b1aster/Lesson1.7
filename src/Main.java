@@ -14,5 +14,29 @@ public class Main {
             System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
         }
 
+        // Разделитель
+        System.out.println();
+
+        // Задание 1.2
+        int counter = 0;
+
+        while (counter < 10){
+            counter++;
+
+            System.out.print(counter);
+
+            if (counter < 10)
+                System.out.print(" ");
+        }
+
+        System.out.println();
+
+        for (int i = counter; i >= 1; i--){
+            System.out.print(i);
+
+            if (i > 1)
+                System.out.print(" ");
+        }
+
     }
 }
