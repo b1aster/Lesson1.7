@@ -59,5 +59,22 @@ public class Main {
             year++;
             calculateYears--;
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 2.1
+        deposit = 15_000; // Переменная была объявлена ранее
+        float percentage = 7;
+
+        int months = 0;
+        while (deposit < 12_000_000){
+
+            deposit += (deposit * (percentage / 100));
+
+            months++;
+        }
+
+        System.out.println("За " + months + " месяцев Василий накопил " + deposit + " рублей");
     }
 }
